@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Danh sách các cảm biến"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/sensor_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_marginBottom="4dp"
+        android:id="@+id/btn_check_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kiểm tra sensor"/>
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_use_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dùng sensor này"/>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        android:textSize="16dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/sensor_result"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sensor_value_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/sensor_value_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/sensor_value_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"/>
+    </LinearLayout>
+</LinearLayout>
